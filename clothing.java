@@ -1,20 +1,16 @@
-public class Clothing extends Product {
+public class Clothing extends product {
     private String size;
 
-    public Clothing(String name, double price, int productId, String size) {
-        super(name, price, productId);
-        this.size = size;
-    }
-
-    public String getSize() {
-        return size;
+    public Clothing() {
+        this.size = "Large";
     }
 
     public void setSize(String size) {
         this.size = size;
     }
 
-    public String getInfo() {
-        return super.getInfo() + " | Size: " + size;
+    @Override
+    public void getInfo() {
+        System.out.println("size: " + size);
     }
 }
