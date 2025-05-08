@@ -11,6 +11,6 @@ public class Electronics extends product {
 
     @Override
     public void getInfo() {
-        System.out.println("Garansi: " + warantyMonths);
+        System.out.println("Garansi: " + warantyMonths + " bulan");
     }
 }
