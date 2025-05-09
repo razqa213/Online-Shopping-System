@@ -1,5 +1,11 @@
 
+import java.security.DrbgParameters;
+import java.util.Scanner;
+
+
 public class product {
+
+    Scanner input = new Scanner(System.in);
 
     private String name;
     private Double price;
