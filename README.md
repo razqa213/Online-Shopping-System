@@ -1,1 +1,16 @@
 # Online-Shopping-System
+Program Online Shopping System ini dibangun dengan bahasa pemrograman Java dan dirancang untuk menampilkan daftar produk elektronik dan pakaian menggunakan prinsip Object-Oriented Programming (OOP). Program terdiri dari empat file utama: product.java, clothing.java, Electronics.java, dan mainapp.java.
+
+## product.java–Kelas-Dasar-(Superclass)
+Program dimulai dengan mendefinisikan kelas dasar product. Kelas ini merepresentasikan produk umum yang memiliki atribut name (nama produk), price (harga produk), dan productId (ID produk). Semua atribut ini disimpan dalam akses private, yang artinya tidak bisa langsung diakses dari luar kelas. Oleh karena itu, tersedia method getter dan setter untuk setiap atribut agar data tetap aman dan terkontrol (ini adalah penerapan dari enkapsulasi dalam OOP). Selain itu, kelas product memiliki method getInfo() yang berfungsi mencetak informasi nama dan harga produk; method ini nantinya akan dioverride di kelas-kelas turunannya untuk menampilkan informasi tambahan sesuai jenis produk.
+
+## clothing.java – Kelas Turunan untuk Pakaian
+Kelas clothing adalah turunan (subclass) dari product, yang berarti clothing mewarisi seluruh atribut dan method dari product. Kelas ini menambahkan satu atribut baru, yaitu size, yang mewakili ukuran pakaian. Di dalam constructor-nya, nilai size diatur ke "Large" secara default. Method setSize() digunakan untuk mengubah ukuran ini, sedangkan method getInfo() dioverride untuk mencetak ukuran pakaian daripada hanya menampilkan nama dan harga produk seperti pada kelas induk. Ini adalah contoh dari polimorfisme—di mana subclass dapat memiliki perilaku berbeda terhadap method yang sama dengan superclass-nya.
+
+## Electronics.java – Kelas Turunan untuk Elektronik
+Kelas Electronics juga merupakan subclass dari product, namun fokus pada produk elektronik. Atribut tambahan yang dimilikinya adalah warantyMonths, yaitu lama garansi dalam bulan. Sama seperti pada clothing, atribut ini diberi nilai default (1 bulan) di dalam constructor-nya, dan dapat diatur ulang dengan method setWarantyMonths(). Method getInfo() di-override untuk menampilkan lama garansi produk elektronik.
+
+## mainapp.java – Kelas Utama (Main Class)
+Eksekusi program dimulai dari file mainapp.java, yang berisi method main() sebagai titik masuk program. Di dalamnya, dibuat dua objek: laptop dari kelas Electronics dan baju dari kelas clothing. Nilai properti tiap objek diatur dengan method setter, contohnya laptop.setName("Acer"), baju.setSize("L"), dan sebagainya. Setelah objek diisi, program mencetak daftar produk elektronik dan pakaian ke layar. Informasi utama seperti nama, harga, dan ID ditampilkan menggunakan method getter, sementara informasi khusus seperti garansi atau ukuran ditampilkan melalui method getInfo() yang telah dioverride di masing-masing subclass.
+
+Dengan struktur kode seperti ini, program memperlihatkan bagaimana inheritance memudahkan kode untuk diperluas, bagaimana polimorfisme memungkinkan method yang sama bertindak berbeda tergantung objeknya, dan bagaimana enkapsulasi menjaga keamanan data. Program ini dapat dikembangkan lebih lanjut untuk menambahkan jenis produk lain, input dari pengguna, atau fitur manajemen stok dengan tetap menjaga struktur OOP yang baik.
