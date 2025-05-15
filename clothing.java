@@ -1,7 +1,7 @@
-public class Clothing extends product {
+public class clothing extends product {
     private String size;
 
-    public Clothing() {
+    public clothing() {
         this.size = "Large";
     }
 
