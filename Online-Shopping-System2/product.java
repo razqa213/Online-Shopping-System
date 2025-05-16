@@ -1,14 +1,16 @@
-import java.security.DrbgParameters;
-import java.util.Scanner;
+import java.time.LocalDateTime;
 
 
-public class product {
-
-    Scanner input = new Scanner(System.in);
+abstract class product {
 
     private String name;
     private Double price;
     private int productId;
+    // Menambahkan atribut createdAt 
+    protected LocalDateTime createdAt; 
+
+    // Membuat constructor product untuk set otomatis ketika objek dibuat
+    
 
     // Getter - mengambil/mengembalikan nilai
     public String getName() {
@@ -23,6 +25,12 @@ public class product {
         return productId;
     }
 
+    public LocalDateTime getDateTime() {
+        return createdAt;
+    }
+
+    abstract String getCategory();
+
     // Setter - memberikan nilai
     public void setName(String name) {
         this.name = name;
@@ -34,6 +42,10 @@ public class product {
 
     public void setProductId(int productId) {
         this.productId = productId;
+    }
+    
+    public void setDate() {
+        this.createdAt = LocalDateTime.now(); 
     }
 
     public void getInfo() {
