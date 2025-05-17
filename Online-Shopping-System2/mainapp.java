@@ -17,6 +17,7 @@ public class mainapp {
         baju.setName("Uniqlo");
         baju.setPrice(12.01);
         baju.setProductId(2);
+        baju.
         }
 
         System.out.println("");
