@@ -3,19 +3,19 @@ public class mainapp {
         Electronics laptop = new Electronics();
         clothing baju = new clothing();
 
-
-        // mengisi object laptop
-        laptop.setName("Acer");
+        {// mengisi object laptop
+        laptop.setName("Acer" );
         laptop.setPrice(210.52);
         laptop.setProductId(1);
         laptop.setWarantyMonths(12);
+        }
 
+        {
         // mengisi object baju 
         baju.setName("Uniqlo");
         baju.setPrice(12.01);
         baju.setProductId(2);
-        baju.setSize("L");
-
+        }
 
         System.out.println("");
 
