@@ -1,4 +1,4 @@
-
-public class Size {
-    
+// Size.java
+public enum Size {
+    XS, S, M, L, XL
 }
