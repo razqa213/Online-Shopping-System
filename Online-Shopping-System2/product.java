@@ -6,6 +6,7 @@ abstract class product {
     private String name;
     private Double price;
     private int productId;
+    private String category;
     // Menambahkan atribut createdAt 
     protected LocalDateTime createdAt; 
 
@@ -29,7 +30,7 @@ abstract class product {
         return createdAt;
     }
 
-    abstract String getCategory();
+    public abstract String getCategory();
 
     // Setter - memberikan nilai
     public void setName(String name) {

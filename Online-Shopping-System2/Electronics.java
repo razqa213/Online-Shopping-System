@@ -13,4 +13,5 @@ public class Electronics extends product {
     public void getInfo() {
         System.out.println("Garansi: " + warantyMonths + " bulan");
     }
+
 }
