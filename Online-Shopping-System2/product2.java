@@ -1,7 +1,7 @@
 import java.time.LocalDateTime;
 
 
-abstract class product {
+abstract class product2 {
 
     private String name;
     private Double price;

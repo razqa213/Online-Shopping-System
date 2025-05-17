@@ -1,7 +1,8 @@
-public class Electronics extends productold {
+
+public class Electronics2 extends product2 implements Discountable {
     private int warantyMonths;
 
-    public Electronics() {
+    public Electronics2() {
         this.warantyMonths = 2;
     }
 

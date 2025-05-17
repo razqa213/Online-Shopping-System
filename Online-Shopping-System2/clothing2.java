@@ -1,7 +1,7 @@
-public class clothing extends product implements Discountable {
+public class clothing2 extends product2 implements Discountable {
     private Size size;
 
-    public clothing(Size size) {
+    public clothing2(Size size) {
         this.size = size;
     }
 

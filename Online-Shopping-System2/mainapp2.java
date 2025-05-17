@@ -1,7 +1,7 @@
-public class mainapp {
+public class mainapp2 {
     public static void main(String[] args) {
-        Electronics laptop = new Electronics();
-        clothing baju = new clothing();
+        Electronics2 laptop = new Electronics2();
+        clothing2 baju = new clothing2();
 
         {// mengisi object laptop
         laptop.setName("Acer" );
@@ -9,6 +9,7 @@ public class mainapp {
         laptop.setProductId(1);
         laptop.setDate();
         laptop.setWarantyMonths(12);
+        
 
         }
 
