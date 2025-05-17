@@ -7,6 +7,7 @@ public class mainapp {
         laptop.setName("Acer" );
         laptop.setPrice(210.52);
         laptop.setProductId(1);
+        laptop.setDate();
         laptop.setWarantyMonths(12);
 
         laptop.setName("Lenovo");
@@ -41,7 +42,7 @@ public class mainapp {
         System.out.println("");
 
         System.out.println("=== LIST PRODUK ELEKTRONIK ===");
-        System.out.println("Nama Produk : " + laptop.getName() + "\nHarga Produk : " + laptop.getPrice() + " Euro" + "\nId : " + laptop.getProductId());
+        System.out.println("Nama Produk : " + laptop.getName() + "\nHarga Produk : " + laptop.getPrice() + " Euro" + "\nId : " + laptop.getProductId() + "\nTanggal Pesan : " + laptop.getDateTime());
         laptop.getInfo();
 
         System.out.println("");
