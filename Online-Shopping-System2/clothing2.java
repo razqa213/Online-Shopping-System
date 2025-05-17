@@ -1,7 +1,7 @@
 public class clothing2 extends product2 implements Discountable {
     private Size size;
 
-    public clothing2(Size size) {
+    public void setSize(Size size) {
         this.size = size;
     }
 
@@ -12,6 +12,10 @@ public class clothing2 extends product2 implements Discountable {
     @Override
     public String getCategory() {
         return this.category;
+    }
+
+    public void setCategory(String category){
+        this.category = category;
     }
 
     

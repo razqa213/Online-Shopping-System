@@ -19,6 +19,11 @@ public class Electronics2 extends product2 implements Discountable {
     public String getCategory() {
         return this.category;
     }
+
+    public void setCategory(String category){
+        this.category = category;
+    }
+
     // Implementasi interface Discountable
     @Override
     public double getDiscountedPrice(double discountPercentage) {
