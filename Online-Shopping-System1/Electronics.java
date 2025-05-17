@@ -1,4 +1,4 @@
-public class Electronics extends product {
+public class Electronics extends productold {
     private int warantyMonths;
 
     public Electronics() {

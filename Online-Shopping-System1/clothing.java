@@ -1,4 +1,4 @@
-public class clothing extends product {
+public class clothing extends productold {
     private String size;
 
     public clothing() {

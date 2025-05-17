@@ -1,9 +1,8 @@
 
-import java.security.DrbgParameters;
 import java.util.Scanner;
 
 
-public class product {
+public class productold {
 
     Scanner input = new Scanner(System.in);
 

@@ -1,7 +1,7 @@
 public class mainapp {
     public static void main(String[] args) {
         Electronics laptop = new Electronics();
-        clothing sempak = new clothing();
+        clothing baju = new clothing();
 
         {// mengisi object laptop
         laptop.setName("Acer" );
@@ -9,33 +9,24 @@ public class mainapp {
         laptop.setProductId(1);
         laptop.setWarantyMonths(12);
 
-        laptop.setName("Lenovo");
-        laptop.setPrice(310.52);
-        laptop.setProductId(1);
-        laptop.setWarantyMonths(12);
-
-        laptop.setName("ASUS");
-        laptop.setPrice(320.52);
-        laptop.setProductId(1);
-        laptop.setWarantyMonths(12);
         }
 
         {
-        // mengisi object sempak 
-        sempak.setName("Uniqlo");
-        sempak.setPrice(12.01);
-        sempak.setProductId(2);
-        sempak.setSize("L");
+        // mengisi object baju 
+        baju.setName("Uniqlo");
+        baju.setPrice(12.01);
+        baju.setProductId(2);
+        baju.setSize("L");
 
-        sempak.setName("Levis");
-        sempak.setPrice(13.01);
-        sempak.setProductId(2);
-        sempak.setSize("L");
+        baju.setName("Levis");
+        baju.setPrice(13.01);
+        baju.setProductId(2);
+        baju.setSize("L");
 
-        sempak.setName("Miniso");
-        sempak.setPrice(11.01);
-        sempak.setProductId(2);
-        sempak.setSize("L");
+        baju.setName("Miniso");
+        baju.setPrice(11.01);
+        baju.setProductId(2);
+        baju.setSize("L");
         }
 
         System.out.println("");
@@ -47,8 +38,8 @@ public class mainapp {
         System.out.println("");
 
         System.out.println("=== LIST PRODUK PAKAIAN ===");
-        System.out.println("Nama Produk : " + sempak.getName() + "\nHarga Produk : " + sempak.getPrice() + " Euro" + "\nId : " + sempak.getProductId());
-        sempak.getInfo();
+        System.out.println("Nama Produk : " + baju.getName() + "\nHarga Produk : " + baju.getPrice() + " Euro" + "\nId : " + baju.getProductId());
+        baju.getInfo();
 
     }
     
