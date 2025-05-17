@@ -1,14 +1,16 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
-abstract class product {
+abstract class product2 {
 
     private String name;
     private Double price;
     private int productId;
-    protected  String category;
+    protected String category;
     // Menambahkan atribut createdAt 
     protected LocalDateTime createdAt; 
+
 
     // Membuat constructor product untuk set otomatis ketika objek dibuat
     
@@ -26,8 +28,10 @@ abstract class product {
         return productId;
     }
 
-    public LocalDateTime getDateTime() {
-        return createdAt;
+    public String getDateTime() {
+        this.createdAt = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        return createdAt.format(formatter);
     }
 
     public abstract String getCategory();
@@ -45,9 +49,6 @@ abstract class product {
         this.productId = productId;
     }
     
-    public void setDate() {
-        this.createdAt = LocalDateTime.now(); 
-    }
 
     public void getInfo() {
         System.out.println(getName() + "-" + getPrice());
