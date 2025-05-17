@@ -8,7 +8,10 @@ public class mainapp {
         laptop.setPrice(210.52);
         laptop.setProductId(1);
         laptop.setWarantyMonths(12);
+<<<<<<< HEAD
 
+=======
+>>>>>>> d6f66fdfa23a701e0d1117667ed9f2461a4e2be8
         }
 
         {
@@ -16,6 +19,7 @@ public class mainapp {
         baju.setName("Uniqlo");
         baju.setPrice(12.01);
         baju.setProductId(2);
+<<<<<<< HEAD
         baju.setSize("L");
 
         baju.setName("Levis");
@@ -27,6 +31,8 @@ public class mainapp {
         baju.setPrice(11.01);
         baju.setProductId(2);
         baju.setSize("L");
+=======
+>>>>>>> d6f66fdfa23a701e0d1117667ed9f2461a4e2be8
         }
 
         System.out.println("");

@@ -6,7 +6,7 @@ abstract class product {
     private String name;
     private Double price;
     private int productId;
-    private String category;
+    protected  String category;
     // Menambahkan atribut createdAt 
     protected LocalDateTime createdAt; 
 
