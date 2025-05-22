@@ -9,7 +9,6 @@ public class mainapp2 {
         laptop.setProductId(1);
         laptop.setDate();
         laptop.setWarantyMonths(12);
-        
 
         }
 
