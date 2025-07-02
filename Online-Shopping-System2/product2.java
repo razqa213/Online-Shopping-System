@@ -1,5 +1,5 @@
 import java.time.LocalDateTime;
-
+import java.time.format.DateTimeFormatter;
 
 abstract class product2 {
 
@@ -45,8 +45,12 @@ abstract class product2 {
         this.productId = productId;
     }
     
-    public void setDate() {
-        this.createdAt = LocalDateTime.now(); 
+        
+    public String getFormattedDate() {
+        this.createdAt = LocalDateTime.now();
+    
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        return createdAt.format(formatter);
     }
 
     public void getInfo() {
