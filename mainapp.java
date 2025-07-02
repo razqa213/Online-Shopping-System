@@ -3,7 +3,6 @@ public class mainapp {
         Electronics laptop = new Electronics();
         clothing baju = new clothing();
 
-
         // mengisi object laptop
         laptop.setName("Acer");
         laptop.setPrice(210.52);
