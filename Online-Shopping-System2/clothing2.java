@@ -17,7 +17,6 @@ public class clothing2 extends product2 implements Discountable {
     public void setCategory(String category) {
         this.category = category;
     }
-
     
     @Override
     public void getInfo() {

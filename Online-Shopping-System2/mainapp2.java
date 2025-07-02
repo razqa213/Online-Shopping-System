@@ -2,17 +2,16 @@ public class mainapp2 {
     public static void main(String[] args) {
         Electronics2 elektronik = new Electronics2();
         Electronics2.Specification spek = elektronik.new Specification(2.0, "Hino");
-        
         clothing2 pakaian = new clothing2();
+        TransactionManager transaksi = new TransactionManager();
+
 
         {// mengisi object elektronik
         elektronik.setName("Acer" );
         elektronik.setPrice(210.00);
         elektronik.setProductId(1);
         elektronik.setWarantyMonths(12);
-    
-
-
+        elektronik.setCategory("laptop");
         }
 
         {
@@ -22,7 +21,10 @@ public class mainapp2 {
         pakaian.setProductId(2);
         pakaian.setSize(Size.M);
         pakaian.setCategory("celana levis");
+        }
 
+        {
+            transaksi.addPurchase("Dwiki", elektronik);
         }
 
         System.out.println("");
