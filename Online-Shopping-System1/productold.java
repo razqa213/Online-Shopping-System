@@ -1,8 +1,4 @@
 
-<<<<<<< HEAD:product.java
-
-=======
->>>>>>> 45ebcab6fc594b770e2de1cb509d9ce6b831e5ba:Online-Shopping-System1/productold.java
 import java.util.Scanner;
 
 
