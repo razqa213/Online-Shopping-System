@@ -7,6 +7,7 @@ public class mainapp {
         laptop.setName("Acer" );
         laptop.setPrice(210.52);
         laptop.setProductId(1);
+        laptop.setDate();
         laptop.setWarantyMonths(12);
 
         }
@@ -16,29 +17,19 @@ public class mainapp {
         baju.setName("Uniqlo");
         baju.setPrice(12.01);
         baju.setProductId(2);
-        baju.setSize("L");
-
-        baju.setName("Levis");
-        baju.setPrice(13.01);
-        baju.setProductId(2);
-        baju.setSize("L");
-
-        baju.setName("Miniso");
-        baju.setPrice(11.01);
-        baju.setProductId(2);
-        baju.setSize("L");
+        baju.
         }
 
         System.out.println("");
 
         System.out.println("=== LIST PRODUK ELEKTRONIK ===");
-        System.out.println("Nama Produk : " + laptop.getName() + "\nHarga Produk : " + laptop.getPrice() + " Euro" + "\nId : " + laptop.getProductId());
+        System.out.println("Nama Produk : " + laptop.getName() + "\nHarga Produk : " + laptop.getPrice() + " Euro" + "\nId : " + laptop.getProductId() + "\nTanggal Pesan : " + laptop.getDateTime());
         laptop.getInfo();
 
         System.out.println("");
 
         System.out.println("=== LIST PRODUK PAKAIAN ===");
-        System.out.println("Nama Produk : " + baju.getName() + "\nHarga Produk : " + baju.getPrice() + " Euro" + "\nId : " + baju.getProductId());
+        System.out.println("Nama Produk : " + baju.getName() + "\nHarga Produk : " + baju.getPrice() + " Euro" + "\nId : " + baju.getProductId() + "\nPrice after 10% discount (Laptop): $" + baju.getDiscountedPrice(10.0));
         baju.getInfo();
 
     }

@@ -11,12 +11,13 @@ public class clothing2 extends product2 implements Discountable {
 
     @Override
     public String getCategory() {
-        return category;
+        return this.category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(String category){
         this.category = category;
     }
+
     
     @Override
     public void getInfo() {

@@ -8,8 +8,6 @@ import java.util.Scanner;
 
 public class productold {
 
-    Scanner input = new Scanner(System.in);
-
     private String name;
     private Double price;
     private int productId;
