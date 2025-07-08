@@ -8,12 +8,12 @@ package com.mycompany.ecommerce;
  *
  * @author Less__
  */
-public class HalamanUtama extends javax.swing.JPanel {
+public class Kategory extends javax.swing.JPanel {
 
     /**
      * Creates new form HalamanUtama
      */
-    public HalamanUtama() {
+    public Kategory() {
         initComponents();
     }
 
