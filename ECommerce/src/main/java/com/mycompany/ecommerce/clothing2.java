@@ -1,3 +1,5 @@
+package com.mycompany.ecommerce;
+
 public class clothing2 extends product2 implements Discountable {
     private Size size;
 
