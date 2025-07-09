@@ -3,7 +3,6 @@ public class mainapp2 {
         Electronics2 elektronik = new Electronics2();
         Electronics2.Specification spek = elektronik.new Specification(2.0, "Hino");
         clothing2 pakaian = new clothing2();
-        TransactionManager transaksi = new TransactionManager();
 
 
         {// mengisi object elektronik
@@ -23,10 +22,6 @@ public class mainapp2 {
         pakaian.setCategory("celana levis");
         }
 
-        {
-            transaksi.addPurchase("Dwiki", elektronik);
-        }
-
         System.out.println("");
 
         System.out.println("=== LIST PRODUK ELEKTRONIK ===");
@@ -36,9 +31,6 @@ public class mainapp2 {
         spek.getSpecs();
         System.out.println("");
 
-        System.out.println("=== LIST PRODUK PAKAIAN ===");
-        System.out.println("Nama Produk : " + pakaian.getName() + "\nHarga Produk : " + pakaian.getPrice() + " Euro" + "\nId : " + pakaian.getProductId() + "\nPrice after 10% discount (Laptop): $" + pakaian.getDiscountedPrice(10.0) + "\nKategori : " + pakaian.getCategory());
-        pakaian.getInfo();
 
     }
     
