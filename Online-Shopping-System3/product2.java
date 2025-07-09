@@ -11,8 +11,6 @@ abstract class product2 {
     protected LocalDateTime createdAt; 
 
     // Membuat constructor product untuk set otomatis ketika objek dibuat
-    
-
     // Getter - mengambil/mengembalikan nilai
     public String getName() {
         return name;
