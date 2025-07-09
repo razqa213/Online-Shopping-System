@@ -1084,6 +1084,9 @@ public class Produk extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
+         Tes menu = new Tes(); // Pastikan class Tes ada dan turunan JFrame
+    menu.setVisible(true); // Tampilkan JFrame Tes
+    this.dispose(); // Tutup JFrame saat ini
     }//GEN-LAST:event_jButton20ActionPerformed
 
     
