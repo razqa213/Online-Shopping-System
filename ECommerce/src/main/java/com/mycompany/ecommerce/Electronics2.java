@@ -1,3 +1,5 @@
+package com.mycompany.ecommerce;
+
 public class Electronics2 extends product2 implements Discountable {
     private int warantyMonths;
     private double price;

@@ -85,7 +85,7 @@ public class Keranjang extends javax.swing.JPanel {
             .addGap(0, 43, Short.MAX_VALUE)
         );
 
-        jPanel7.setBackground(new java.awt.Color(245, 245, 245));
+        jPanel7.setBackground(new java.awt.Color(246, 246, 246));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);

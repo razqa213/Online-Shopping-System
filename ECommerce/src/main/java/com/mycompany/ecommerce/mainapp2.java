@@ -1,3 +1,5 @@
+package com.mycompany.ecommerce;
+
 public class mainapp2 {
     public static void main(String[] args) {
         Electronics2 elektronik = new Electronics2();
